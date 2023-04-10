@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>codingboy_CW - Live CSS Editor!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="transition:2s;">
+        <h1 class="header-title">Edit CSS!</h1>
+        <p class="header-title">Edit the CSS below and see changes live!</p>
+
+        <style>
+            body {
+                font-size: 20px;
+            }
+            .test-div {
+                width:100px;
+                height: 100px;
+                background-color: rgb(9, 119, 119);
+                padding: 10px;
+            }
+        </style>
+
+        <textarea name="Text1" cols="100" rows="20" id="css-editor-textarea" onkeyup="update();">
+body {
+    font-size: 20px;
+}
+.test-div {
+    width:100px;
+    height: 100px;
+    background-color: rgb(9, 119, 119);
+    padding: 10px;
+}
+        </textarea>
+
+        
+        
+        <div class="test-div">
+            My classname is test-div
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
